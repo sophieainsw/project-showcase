@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* Navigation CSS */
+header{
+  display:flex;
+  justify-content: space-between;
+  background-color: pink;
+}
+
+header h1{
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px;
+  height: 100px;
+  background-color: pink;
+  justify-content: end;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#Sophie{
+  background-color: lightskyblue;
+  margin-bottom: 10px;
+  width: 200px;
+  text-align: center;
+  padding: 15px;
+  font-size: 35px;
+}
+
+#navbar h1 {
+    width: 25%;
+    font-weight: 1000;
+    background-color: lightskyblue;
+    align-items: center;
+  }
+
+
+#navigation p {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+/* Hero Banner */
+.hero-banner img{
+  width: 100%;
+  height: 250px;
+}
+
+.container{
+  position: relative;
+}
+
+.bottom-right{
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  background-color: skyblue;
+  padding: 10px;
+}
