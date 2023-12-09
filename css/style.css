@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
+:root{
+  --greytext: rgb(46, 44, 44)
+}
 body {
   margin: 0;
   padding: 0;
@@ -20,6 +22,7 @@ h6 {
 
 p {
   margin: 0;
+  font-size: 15px;
 }
 
 /* Navigation CSS */
@@ -47,6 +50,8 @@ header h1{
   width: 50%;
   align-items: center;
   justify-content: space-evenly;
+  font-size: 20px;
+  color: var(--greytext);
 }
 
 #Sophie{
@@ -90,3 +95,41 @@ header h1{
   background-color: skyblue;
   padding: 10px;
 }
+
+/* Main */
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-section{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.aboutme{
+flex-direction: row;
+justify-content: space-around;
+width: 30%;
+margin: 15px;
+text-align: center;
+}
+
+.aboutme h2{
+  font-size: 40px;
+  color: var(--greytext);
+}
+.text{
+flex-direction: row;
+justify-content: space-around;
+padding-right: 50px;
+border-left: 3px solid black;
+padding-left: 20px;
+padding-top: 10px;
+text-align: middle;
+color: var(--greytext);
+}
+
