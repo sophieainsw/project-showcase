@@ -63,6 +63,9 @@ header h1{
   font-size: 35px;
 }
 
+a{
+  color: var(--greytext); 
+}
 #navbar h1 {
     width: 25%;
     font-weight: 1000;
@@ -166,6 +169,7 @@ color: var(--greytext);
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
   display: grid;
   text-align: center;
   font-size: 30px;
@@ -173,6 +177,7 @@ color: var(--greytext);
 }
 
 .item1 {
+  position: relative;
   display: grid;
   grid-column: 1 / span 2;
 }
@@ -182,4 +187,56 @@ max-width: 100%;
 max-height: 100%;
 object-fit: cover;
 grid-column: span 2;
+}
+
+.item2 {
+  position: relative;
+}
+
+.item3 {
+  position:relative;
+}
+
+.item4{
+  position: relative;
+}
+
+.item5{
+  position: relative;
+}
+
+.ProjectName{
+  position: absolute;
+  bottom: 30px;
+  left: 15px;
+  background-color: pink;
+  padding: 5px;
+}
+
+#picture2{
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
+#picture3{
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
+#picture4{
+  background-image: url(../images/02-portfolio-3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+}
+
+#picture5{
+  background-image: url(../images/02-portfolio-4.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
 }
