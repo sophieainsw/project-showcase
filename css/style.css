@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 :root{
-  --greytext: rgb(46, 44, 44)
+  --greytext: rgb(46, 44, 44);
+  --backgroundblue: darkgrey;
 }
 body {
   margin: 0;
@@ -55,11 +56,12 @@ header h1{
 }
 
 #Sophie{
-  background-color: lightskyblue;
+  background-color: var(--backgroundblue);
   width: 300px;
   text-align: center;
   padding: 20px;
   font-size: 40px;
+  color: white;
 }
 
 a{
@@ -68,7 +70,7 @@ a{
 #navbar h1 {
     width: 25%;
     font-weight: 1000;
-    background-color: lightskyblue;
+    background-color: var(--backgroundblue);
     align-items: center;
   }
 
@@ -94,9 +96,10 @@ a{
   right: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 34px;
-  background-color: skyblue;
+  background-color: var(--backgroundblue);
   padding: 20px;
   border-radius: 10px;
+  color: white;
 }
 
 /* Main */
@@ -175,7 +178,11 @@ color: var(--greytext);
   text-align: center;
   font-size: 30px;
   overflow: hidden;
+  border: solid 5px pink;
+  transition: 0.3s;
 }
+
+.grid-item:hover {opacity: 0.6;}
 
 .item1 {
   position: relative;
@@ -209,11 +216,8 @@ grid-column: span 2;
 .ProjectName{
   position: absolute;
   bottom: 30px;
-  left: 15px;
   background-color: pink;
   padding: 15px;
-  opacity: 0.9;
-  border-radius: 10px;
 }
 
 .ProjectName a{
@@ -269,3 +273,58 @@ grid-column: span 2;
   height: 50px;
   padding-top: 25px;
   }
+
+  /* Media Queries */
+
+  @media screen and (max-width: 600px) {
+
+    .aboutme {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 40%;
+      margin: 15px;
+      text-align: center;
+      padding-right: 4px;
+      border-right: 3px solid black;
+      }
+
+    .grid-container {
+      width:100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      gap: 10px;
+      background-color: white;
+      padding: 10px;
+    }
+   
+    .item1 {
+      display: grid;
+      grid-column: 1 / span 1;
+    }
+    
+
+    .work{
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 8px;
+      text-align: center;
+      border-right: 3px solid black;
+      width: 16%;
+      padding: 10px;
+    
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: row;
+      width: 16.6%;
+      margin: 8px;
+      text-align: center;
+      border-right: 3px solid black;
+      height: 50px;
+      font-size: 14px;
+      padding-right: 4px;
+      }
+  }
+  
